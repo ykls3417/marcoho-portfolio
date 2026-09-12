@@ -1,0 +1,15 @@
+const assert = require('node:assert/strict');
+const { resolveCommand: run } = require('./site/terminal.js');
+const content = require('./content.json');
+assert.match(run(' WHOAMI ', content).text, /marcoho/);
+assert.match(run('projects', content).text, /Charamelt/);
+assert.match(run('projects', content).text, /email rewriter/);
+assert.match(run('projects', content).text, /The Tower/);
+assert.equal(run('theme light', content).theme, 'light');
+assert.equal(run('theme nope', content).theme, undefined);
+assert.equal(run('open about', content).target, 'about');
+assert.equal(run('open contact', {...content, email:'', github:'', linkedin:'', resume_url:''}).target, undefined);
+assert.equal(run('clear', content).clear, true);
+assert.match(run('<img src=x onerror=alert(1)>', content).text, /Unknown command/);
+assert.equal(run('   ', content).text, '');
+console.log('Terminal commands passed.');

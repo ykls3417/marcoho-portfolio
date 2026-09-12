@@ -1,0 +1,93 @@
+{
+  "name": "Marco Ho",
+  "handle": "marcoho",
+  "role": "AI & software engineer",
+  "location": "Hong Kong",
+  "headline": "I'm Marco.\nI build AI tools.",
+  "intro": "Based in Hong Kong. My work so far: autonomous research agents, a video creation studio, and language models for English and Cantonese.",
+  "personal_note": "",
+  "status": "Working on Charamelt",
+  "about": "I studied Computer Engineering at HKUST, with an extended major in AI. For my final-year project, I worked on English and Cantonese embeddings for a conversational wellness assessment system. Since then, I've been building research agents and content automation at New Media Lab, alongside my own projects.",
+  "education": "HKUST · BEng Computer Engineering · Extended Major in AI · First Class Honours, 2025",
+  "skills": [
+    "Python",
+    "TypeScript",
+    "FastAPI",
+    "LLMs & agents",
+    "RAG",
+    "SQL",
+    "n8n",
+    "Git"
+  ],
+  "projects": [
+    {
+      "name": "Charamelt",
+      "category": "Personal project",
+      "description": "A studio for turning a topic or script into an editable video. Characters, voice, captions, and scene layouts can be changed separately before rendering.",
+      "tags": [
+        "TypeScript",
+        "AI workflows",
+        "Video"
+      ],
+      "url": "https://github.com/ykls3417/Charamelt",
+      "note": "An engineering detail: edits preserve compatible narration and scene geometry, while invalidating reviews that no longer match. Background jobs keep running when the browser closes."
+    },
+    {
+      "name": "LLM-based email rewriter",
+      "category": "Personal project · Writing tool",
+      "description": "A small Flask and React app that rewrites a draft email using its purpose and your instructions. The prompt asks the model to preserve facts, dates, and requests.",
+      "note": "Flask serves both the API and the built React frontend. The model and OpenAI-compatible provider can be configured.",
+      "tags": [
+        "Python",
+        "Flask",
+        "React",
+        "LLMs"
+      ],
+      "url": "https://github.com/ykls3417/LLM-based-email-re-writer"
+    },
+    {
+      "name": "The Tower — farming tier calculator",
+      "category": "Side project · Game tool",
+      "description": "A calculator for The Tower that estimates a theoretical farming tier from the highest tier and wave reached.",
+      "note": "A focused game tool: a small input, a concrete calculation, and a result to compare against your runs.",
+      "tags": [
+        "HTML",
+        "Game tools"
+      ],
+      "url": "https://github.com/ykls3417/TheTower_TheoreticalTierShouldIFarm"
+    },
+    {
+      "name": "",
+      "category": "",
+      "description": "",
+      "note": "",
+      "tags": [],
+      "url": ""
+    }
+  ],
+  "experience": [
+    {
+      "dates": "2025 — present",
+      "role": "Junior AI Researcher Assistant",
+      "company": "New Media Lab Limited",
+      "description": "Built autonomous research and content workflows, text optimization tools, and automated data pipelines."
+    },
+    {
+      "dates": "2023 — 2024",
+      "role": "Developer Intern",
+      "company": "AI Momentum Limited",
+      "description": "Worked on a production AI chatbot, a JavaScript-to-TypeScript backend migration, and SQL data workflows."
+    }
+  ],
+  "contact_heading": "Talk code, AI, or a project.",
+  "contact_text": "",
+  "email": "",
+  "github": "https://github.com/ykls3417",
+  "linkedin": "",
+  "resume_url": "",
+  "footer": "marcoho / Hong Kong",
+  "show_empty_project": false,
+  "interests": "I like projects with a specific problem to work on: editing a generated video, rewriting an awkward email, or figuring out which tier to farm in a game. My research work took me into English and Cantonese NLP. Those are the two sides of my work so far: language models and small tools with a clear job.",
+  "now": "Working on Charamelt: story and scene editing, background generation, and keeping reviews consistent when a video changes.",
+  "terminal_welcome": "Have a look around. Type help, or try a command below."
+}
