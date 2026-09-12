@@ -38,23 +38,13 @@ Check before publishing:
 python3 check.py
 ```
 
-## Publish with GitHub Pages
+## GitHub and deployment
 
-1. Create an empty public GitHub repository named `marcoho-portfolio` in your own account.
-2. From this folder, add that repository and push:
+Repository: https://github.com/ykls3417/marcoho-portfolio
 
-   ```sh
-   git add .
-   git commit -m "Add editable terminal portfolio"
-   git remote add origin https://github.com/YOUR_USERNAME/marcoho-portfolio.git
-   git push -u origin main
-   ```
+GitHub Pages is configured to deploy through `.github/workflows/pages.yml`. Pushes to `main` run checks, build the HTML, and publish `site/`. The Actions run reports the deployment URL and result.
 
-3. Repository **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-4. Open **Actions → Publish portfolio → Run workflow**. Later pushes to `main` build and deploy automatically.
-5. Successful workflow exposes the real Pages URL. For this repository name it is normally `https://YOUR_USERNAME.github.io/marcoho-portfolio/`.
-
-GitHub's web editor can edit `content.json` and `site/theme.css`; commit changes to trigger deployment. GitHub authentication is required to create/push/publish. This project is prepared locally; it is not already published.
+Edit `content.json` or `site/theme.css` with GitHub's web editor and commit to `main` to update the site. For local edits, run the checks and build, commit, then `git push`. Command-line pushes require your own GitHub authentication; the initial files were uploaded through the signed-in web session.
 
 Only `site/` is uploaded as the website artifact. Relative asset URLs support repository subpaths. To host elsewhere, upload the contents of `site/` after building.
 
